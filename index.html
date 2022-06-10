@@ -10,7 +10,6 @@
       .main-container {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         height: 100%;
       }
 
@@ -25,6 +24,7 @@
         padding: 10px;
         background-color: lightblue;
         flex: 1;
+        min-height: 200px;
       }
 
       .tile1 {
@@ -70,7 +70,7 @@
             <a href="http://sass.js.org/" target="_window">
               Sass.js Playground
             </a>
-            <h3>Try</h3>
+            <h4>Try</h4>
             <pre>
               <code>
 @import "_variables";
@@ -106,9 +106,15 @@
           </div>
         </div>
         <div class="tile">
-          <a href="" target="_window">
-            Layout xxx
-          </a>
+          <div>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_window">
+              CSS Flex
+            </a>
+            <p>align-items (flex-direction: row)</p>
+            <img src="assets/align-items.svg" />
+            <p>gap: row-gap, column-gap</p>
+            <p>flex: flex-grow, flex-shrink and flex-basis</p>
+          </div>
         </div>
       </div>
     </div>
