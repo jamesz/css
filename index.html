@@ -3,15 +3,20 @@
     <style>
       body {
         background-color: white;
-        color: darkgrey;
         margin: 0px;
         padding: 0px;
       }
 
-      .tiles {
+      .main-container {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         height: 100%;
+      }
+
+      .section {
+        display: flex;
+        flex: 1;
       }
 
       .tile {
@@ -39,36 +44,72 @@
     </style>
   </header>
   <body>
-    <div class="tiles">
-      <div class="tile tile1">
-        <a href="layouts/layout1.html">
-          Layout 1 - Top Left Main
-        </a>
+    <div class="main-container">
+
+      <div class="section">
+        <div class="tile tile1">
+          <a href="layouts/layout1.html" target="_window">
+            Layout 1 - Top Left Main
+          </a>
+        </div>
+        <div class="tile tile2">
+          <a href="layouts/layout2.html" target="_window">
+            Layout 2 - Top Main Right
+          </a>
+        </div>
+        <div class="tile tile3">
+          <a href="layouts/layout3.html" target="_window">
+            Layout 3 - Top Main Bottom
+          </a>
+        </div>
       </div>
-      <div class="tile tile2">
-        <a href="layouts/layout2.html">
-          Layout 2 - Top Main Right
-        </a>
-      </div>
-      <div class="tile tile3">
-        <a href="layouts/layout3.html">
-          Layout 3 - Top Main Bottom
-        </a>
-      </div>
-      <div class="tile">
-        <a href="">
-          Layout xxx
-        </a>
-      </div>
-      <div class="tile">
-        <a href="">
-          Layout xxx
-        </a>
-      </div>
-      <div class="tile">
-        <a href="">
-          Layout xxx
-        </a>
+
+      <div class="section">
+        <div class="tile">
+          <div>
+            <a href="http://sass.js.org/" target="_window">
+              Sass.js Playground
+            </a>
+            <h3>Try</h3>
+            <pre>
+              <code>
+@import "_variables";
+@import "_demo";
+
+.selector {
+  margin: $size;
+  background-color: $brandColor;
+
+  .nested {
+    margin: $size / 2;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="tile">
+          <div>
+            <a href="https://www.w3schools.com/css/css_combinators.asp" target="_window">
+              CSS Combinators
+            </a>
+            <ul>
+              <li>descendant selector (space)</li>
+              <li>child selector (&gt;)</li>
+              <li>adjacent sibling selector (+)</li>
+              <li>general sibling selector (~)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tile">
+          <a href="" target="_window">
+            Layout xxx
+          </a>
+        </div>
       </div>
     </div>
   </body>
