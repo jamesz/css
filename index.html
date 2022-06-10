@@ -16,26 +16,42 @@
       }
 
       .tile {
+        display: flex;
         margin: 10px;
         padding: 10px;
         background-color: lightblue;
         flex: 1;
       }
+
+      .tile1 {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      .tile2 {
+        align-items: center;
+        justify-content: center;
+      }
+
+      .tile3 {
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
     </style>
   </header>
   <body>
     <div class="tiles">
-      <div class="tile">
+      <div class="tile tile1">
         <a href="layouts/layout1.html">
           Layout 1 - Top Left Main
         </a>
       </div>
-      <div class="tile">
+      <div class="tile tile2">
         <a href="layouts/layout2.html">
           Layout 2 - Top Main Right
         </a>
       </div>
-      <div class="tile">
+      <div class="tile tile3">
         <a href="layouts/layout3.html">
           Layout 3 - Top Main Bottom
         </a>

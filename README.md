@@ -1,3 +1,4 @@
 # CSS Back to Basics
 
-Some css snippets to help remind me every now and then.
+Purpose
+CSS snippets for a quick reference or refresher
