@@ -7,41 +7,48 @@
         padding: 0px;
       }
 
+      /* ensure img don't break flex grid alignments */
       img {
         max-width: 100%;
       }
 
+      /* column so each section is a row */
       .main-container {
         display: flex;
         flex-direction: column;
         height: 100%;
       }
 
+      /* each section has multiple tiles, use display: flex to create a grid like layout */
       .section {
         display: flex;
         flex: 1;
       }
 
+      /* some generic styling for tiles */
       .tile {
-        display: flex;
         margin: 10px;
         padding: 10px;
         background-color: lightblue;
         flex: 1;
-        min-height: 200px;
+        min-height: 100px;
       }
 
+      /* tiles to demonstrate align-items & justify-content flex container properties */
       .tile1 {
+        display: flex;
         align-items: flex-start;
         justify-content: flex-start;
       }
 
       .tile2 {
+        display: flex;
         align-items: center;
         justify-content: center;
       }
 
       .tile3 {
+        display: flex;
         align-items: flex-end;
         justify-content: flex-end;
       }
