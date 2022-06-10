@@ -89,6 +89,23 @@
 
       <div class="section">
         <div class="tile">
+          <div>absolute - relative to ancestor </div>
+          <div style="position:absolute; background-color:red; top:0px; left:0px; width:200px">absolute - top 0 left 0</div>
+          <div style="position:absolute; background-color:red; width:200px">absolute</div>
+          <div style="background-color:blue;">another div</div>
+        </div>
+        <div class="tile">
+          relative - to current position - no change of layout
+          <div style="position:relative; background-color:green; top:50px; left:50px">relative</div>
+        </div>
+        <div class="tile">
+          static - top right bottom left does not apply
+          <div style="position:static; background-color:yellow; top:50px; left:50px">static</div>          
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="tile">
           <div>
             <a href="http://sass.js.org/" target="_window">
               Sass.js Playground
