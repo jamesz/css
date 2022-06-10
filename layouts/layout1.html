@@ -1,0 +1,54 @@
+<html>
+  <header>
+    <style>
+      body {
+        background-color: white;
+        color: darkgrey;
+        border-color: lightblue;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%
+      }
+
+      .top-panel {
+        height: 150px;
+        border-bottom: 1px solid;
+      }
+
+      .bottom-panel {
+        flex: 1;
+        display: flex;
+      }
+
+      .side-panel {
+        width: 250px;
+        align-items: stretch;
+        border-right: 1px solid;
+      }
+
+      .main-panel {
+        flex: 1;
+      }
+    </style>
+  </header>
+  <body>
+    <div class="main-container">
+      <div class="top-panel">
+        Layout 1 - Top - Left - Main
+      </div>
+      <div class="bottom-panel">
+        <div class="side-panel">
+          Side Panel
+        </div>
+        <div class="main-panel">
+          Main Panel
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
