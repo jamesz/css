@@ -2,4 +2,4 @@
 
 Purpose: quick visual reference for myself
 
-<img src="assets/read-me.png" />
+<img src="assets/readme.png" />
