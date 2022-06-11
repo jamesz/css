@@ -90,9 +90,9 @@
       <div class="section">
         <div class="tile">
           position: absolute - relative to ancestor - changes layout 
-          <div style="position:absolute; background-color:red; top:0px; left:0px; width:200px">absolute - top 0 left 0</div>
-          <div style="position:absolute; background-color:red; opacity: 0.3; width:200px;">absolute</div>
-          <div style="background-color:blue;">div after 2x absolute divs</div>
+          <div style="position:absolute; background-color:red; top:0px; left:0px; width:200px">absolute (1) - top 0 left 0</div>
+          <div style="position:absolute; background-color:red; opacity: 0.3;">absolute (2)</div>
+          <div style="background-color:blue;">-------------------- div after 2x absolute divs</div>
         </div>
         <div class="tile">
           position: relative - to current position - no change of layout
@@ -108,10 +108,10 @@
       <div class="section">
         <div class="tile">
           <div>
+            Try: 
             <a href="http://sass.js.org/" target="_window">
               Sass.js Playground
             </a>
-            <h4>Try</h4>
             <pre>
               <code>
 @import "_variables";
