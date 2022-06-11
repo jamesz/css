@@ -131,6 +131,42 @@
 }
               </code>
             </pre>
+            <a href="https://css-tricks.com/the-sass-ampersand/" target="_window">
+              Sass Ampersand (&)
+            </a>
+            <pre>
+              <code>
+// example 1 - inverting parent & child
+
+.button {
+  body.page-about & {
+    background-color: blue;
+  }
+}
+
+// example 2 - wacky #1, understand it as replacing & with compiled parent selector
+
+.parent {
+  .child {
+    & div & & > a {
+      background-color: blue;
+    }
+  }
+}
+
+// example 3 - wacky #2
+
+.parent {
+  .child {
+    .grand-child & {
+      &.sibling {
+        background-color: blue;
+      }
+    }
+  }
+}
+              </code>
+            </pre>
           </div>
         </div>
         <div class="tile">
