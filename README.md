@@ -1,4 +1,3 @@
-# CSS Back to Basics
+# CSS Quick Reference
 
-Purpose
-CSS snippets for a quick reference or refresher
+Purpose: quick visual reference for myself, things that I often forget.
